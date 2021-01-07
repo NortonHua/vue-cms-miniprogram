@@ -58,10 +58,24 @@ export default {
         forceFit: true,
         color: ['#4577FF', '#00C292', '#234DFD'],
         columnSize: 12,
+        xAxis:{
+          label:{
+            visible:true,
+            offsetX:-10,
+            rotate:45
+          }
+        },
         legend: {
           visible: true,
           position: 'top-right',
         },
+        scrollBar:{
+          interactions: [
+            {
+              type: 'scrollbar',
+            },
+          ],
+        }
       })
       canvas.render()
     },
