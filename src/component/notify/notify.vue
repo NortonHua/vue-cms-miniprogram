@@ -101,7 +101,7 @@ export default {
   mounted() {
     // webSocket
     if ('WebSocket' in window) {
-      this.websocket = new WebSocket('WS://localhost:5000/ws/message')
+      this.websocket = new WebSocket('wss://www.onesweetoneday.com/ws/message')
       this.initWebSocket()
     } else {
       this.$message.error('当前浏览器不支持WebSocket')
